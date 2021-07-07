@@ -3,9 +3,9 @@ import time
 def square_root(num, epsilon):
     bajo = 0.0
     alto = max(1.0, num)
-    respuesta = (alto + bajo) / 2
+    respuesta = (alto + bajo) / 2 #1
 
-    while abs(respuesta**2 - num) >= epsilon:
+    while abs(respuesta**2 - num) >= epsilon:  #epsilon
         if respuesta**2 < num:
             bajo = respuesta
         else:
